@@ -1,7 +1,10 @@
 // COMSC-210 | Lab 14 | Johnathan Perez Baltazar
 
 #include <iostream>
+#include <vector>
 using namespace std;
+
+const int COLOR_AMOUNT = 5;
 
 class Color{
     private:
@@ -35,5 +38,9 @@ class Color{
  * @return 
 */
 int main() {
+    vector<Color> color;
+
+    for (int i = 0; i < COLOR_AMOUNT; i++){}
+
     return 0;
 }
