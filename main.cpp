@@ -29,6 +29,8 @@ class Color{
         int getBlue(){
             return blue;
         }
+
+    // Method to display the color in RGB format
         void displayColor(){
             cout << "Red: " << red << ", Green: " << green 
                 << ", Blue: " << blue << endl;
@@ -36,12 +38,14 @@ class Color{
 };
 
 /**
- * @brief - Description of main
- * @return 
+ * @brief The main function generates random colors, stores them in a vector, and 
+ *        displays them.
 */
 int main() {
+    // Create a vector to store Color objects
     vector<Color> color;
 
+    // Generate random colors and store them in the vector
     for (int i = 0; i < COLOR_AMOUNT; i++){
         int r = rand() % 256;
         int g = rand() % 256;
@@ -52,6 +56,7 @@ int main() {
         color.push_back(c);
     }
 
+    // Display the generated colors
     for (int i = 0; i < color.size(); i++){
         cout << "Color " << i + 1 << ": ";
         color[i].displayColor();
